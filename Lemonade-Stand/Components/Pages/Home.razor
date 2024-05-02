@@ -1,7 +1,180 @@
 ﻿@page "/"
+@using LemonadeStand.Application.Models
+@using LemonadeStand.Domain.Interfaces
+@using LemonadeStand.Domain.Models
+@using System.Collections.ObjectModel
+@rendermode InteractiveServer
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1>Lemonade Stand</h1>
+    
+<hr />
 
-Welcome to your new app.
+<h2>Available Recipes</h2>
+
+    <div class="card-group" style="width: 610px;">
+
+        <div class="card">
+            <div class="card-header">
+                <h5>Apple Lemonade</h5>
+            </div>
+            <div class="card-body">
+                Price per glass: 10
+                <hr />
+                Fruits needed per glass: 2,5 Apple(s)
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h5>Melon Lemonade</h5>
+            </div>
+            <div class="card-body">
+                Price per glass: 12
+                <hr />
+                Fruits needed per glass: 0,5 Melon(s)
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h5> Orange Lemonade </h5>
+            </div>
+            <div class="card-body">
+                Price per glass: 9
+                <hr />
+                Fruits needed per glass: 1 Orange(s)
+            </div>
+        </div>
+
+    </div>
+
+<hr />
+
+<h2>Customer order</h2>
+
+<!-- Error Message -->
+@if (!string.IsNullOrEmpty(orderMessage) && !orderMessage.StartsWith("Successfully"))
+{
+    <div class="alert alert-danger" style="">
+        @orderMessage
+    </div>
+}
+
+<!-- Successful Order Message ( StartsWith känns inte helt rätt, men får fungera nu ) -->
+@if (!string.IsNullOrEmpty(orderMessage) && orderMessage.StartsWith("Successfully"))
+{
+    <div class="alert alert-success" style="">
+        @orderMessage
+    </div>
+    <div class="alert alert-primary">
+        <h5>Order Details:</h5>
+        <p>@orderDetails</p>
+    </div>
+}
+
+
+
+<EditForm Model="@LemonadeOrder" OnSubmit="ProcessOrder" FormName="LemonadeOrderForm">
+    <div>
+        <label> Select Recipe:</label>
+        <InputSelect @bind-Value="selectedRecipeName" class="form-control">
+            @foreach (var recipe in availableRecipeList)
+            {
+                <option value="@recipe.Name">@recipe.Name</option>
+            }
+        </InputSelect>
+    </div>
+
+    <div>
+        <label> Ordered Quantity: </label>
+        <InputNumber @bind-Value="orderedQuantity" class="form-control" />
+    </div>
+
+    <div>
+        <label> Money Paid </label>
+        <InputNumber @bind-Value="moneyPaid" class="form-control" />
+    </div>
+
+    <div>
+        <label> Apples added: </label>
+        <InputNumber @bind-Value="apples" class="form-control" />
+    </div>
+
+    <div>
+        <label> Melons added: </label>
+        <InputNumber @bind-Value="melons" class="form-control" />
+    </div>
+
+    <div>
+        <label> Oranges added: </label>
+        <InputNumber @bind-Value="oranges" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary"> Process order </button>
+</EditForm>
+
+
+
+@code {
+    public string selectedRecipeName;
+    public IRecipe? selectedRecipe;
+    public int orderedQuantity;
+    public int moneyPaid;
+    public int apples;
+    public int melons;
+    public int oranges;
+    public string orderMessage;
+    public string orderDetails;
+
+    FruitPressService LemonadeOrder = new FruitPressService();
+
+    static List<IRecipe> availableRecipeList = new List<IRecipe>
+    {
+        new AppleLemonadeRecipe(),
+        new MelonLemonadeRecipe(),
+        new OrangeLemonadeRecipe()
+    };
+
+
+    private void ProcessOrder()
+    {
+        try
+        {
+            selectedRecipe = availableRecipeList.FirstOrDefault(r => r.Name == selectedRecipeName);
+
+            if (selectedRecipe == null)
+            {
+                orderMessage = "Recipe not found.";
+                return;
+            }
+
+            Collection<IFruit> fruits = new Collection<IFruit>();
+
+            for (int i = 0; i < apples; i++) fruits.Add(new Apple());
+            for (int i = 0; i < melons; i++) fruits.Add(new Melon());
+            for (int i = 0; i < oranges; i++) fruits.Add(new Orange());
+
+
+            var successfulOrder = LemonadeOrder.Produce(selectedRecipe, fruits, moneyPaid, orderedQuantity);
+            
+
+            if(successfulOrder != null && successfulOrder.Success)
+            {
+                decimal totalCost = moneyPaid - successfulOrder.ChangeReturned;
+                orderMessage = successfulOrder.Message;
+                orderDetails = $"Cost: {totalCost}, Paid: {moneyPaid}, Change back: {successfulOrder.ChangeReturned}, Glasses produced: {successfulOrder.GlassesProduced}, Remaining fruits: {successfulOrder.RemainingFruits}";
+            }
+            else
+            {
+                orderMessage = "Failed to process the order.";
+            }
+
+        }
+        catch (Exception ex)
+        {
+            orderMessage = $"Error: {ex.Message}";
+        }
+    }
+}
