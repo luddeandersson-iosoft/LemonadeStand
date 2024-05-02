@@ -1,10 +1,18 @@
 using Lemonade_Stand.Components;
+using LemonadeStand.Application;
+using LemonadeStand.Application.Models;
+using Microsoft.AspNetCore.Hosting.Builder;
+using System.Reflection.Emit;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+
+builder.Services.AddScoped<IFruitPressService, FruitPressService>();
+
 
 var app = builder.Build();
 

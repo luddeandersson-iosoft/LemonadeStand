@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Lemonade-Stand/1.0.0": {
+        "dependencies": {
+          "LemonadeStand.Application": "1.0.0",
+          "LemonadeStand.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Lemonade-Stand.dll": {}
+        }
+      },
+      "LemonadeStand.Application/1.0.0": {
+        "dependencies": {
+          "LemonadeStand.Domain": "1.0.0"
+        },
+        "runtime": {
+          "LemonadeStand.Application.dll": {}
+        }
+      },
+      "LemonadeStand.Domain/1.0.0": {
+        "runtime": {
+          "LemonadeStand.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lemonade-Stand/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LemonadeStand.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LemonadeStand.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
