@@ -1,0 +1,16 @@
+C:\Users\ludvig.andersson\source\repos\Lemonade-Stand\LemonadeStand\LemonadeStand.Application\bin\Debug\net8.0\LemonadeStand.Application.deps.json
+C:\Users\ludvig.andersson\source\repos\Lemonade-Stand\LemonadeStand\LemonadeStand.Application\bin\Debug\net8.0\LemonadeStand.Application.dll
+C:\Users\ludvig.andersson\source\repos\Lemonade-Stand\LemonadeStand\LemonadeStand.Application\bin\Debug\net8.0\LemonadeStand.Application.pdb
+C:\Users\ludvig.andersson\source\repos\Lemonade-Stand\LemonadeStand\LemonadeStand.Application\bin\Debug\net8.0\LemonadeStand.Domain.dll
+C:\Users\ludvig.andersson\source\repos\Lemonade-Stand\LemonadeStand\LemonadeStand.Application\bin\Debug\net8.0\LemonadeStand.Domain.pdb
+C:\Users\ludvig.andersson\source\repos\Lemonade-Stand\LemonadeStand\LemonadeStand.Application\obj\Debug\net8.0\LemonadeStand.Application.csproj.AssemblyReference.cache
+C:\Users\ludvig.andersson\source\repos\Lemonade-Stand\LemonadeStand\LemonadeStand.Application\obj\Debug\net8.0\LemonadeStand.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ludvig.andersson\source\repos\Lemonade-Stand\LemonadeStand\LemonadeStand.Application\obj\Debug\net8.0\LemonadeStand.Application.AssemblyInfoInputs.cache
+C:\Users\ludvig.andersson\source\repos\Lemonade-Stand\LemonadeStand\LemonadeStand.Application\obj\Debug\net8.0\LemonadeStand.Application.AssemblyInfo.cs
+C:\Users\ludvig.andersson\source\repos\Lemonade-Stand\LemonadeStand\LemonadeStand.Application\obj\Debug\net8.0\LemonadeStand.Application.csproj.CoreCompileInputs.cache
+C:\Users\ludvig.andersson\source\repos\Lemonade-Stand\LemonadeStand\LemonadeStand.Application\obj\Debug\net8.0\LemonadeStand.Application.sourcelink.json
+C:\Users\ludvig.andersson\source\repos\Lemonade-Stand\LemonadeStand\LemonadeStand.Application\obj\Debug\net8.0\Lemonade.24E84279.Up2Date
+C:\Users\ludvig.andersson\source\repos\Lemonade-Stand\LemonadeStand\LemonadeStand.Application\obj\Debug\net8.0\LemonadeStand.Application.dll
+C:\Users\ludvig.andersson\source\repos\Lemonade-Stand\LemonadeStand\LemonadeStand.Application\obj\Debug\net8.0\refint\LemonadeStand.Application.dll
+C:\Users\ludvig.andersson\source\repos\Lemonade-Stand\LemonadeStand\LemonadeStand.Application\obj\Debug\net8.0\LemonadeStand.Application.pdb
+C:\Users\ludvig.andersson\source\repos\Lemonade-Stand\LemonadeStand\LemonadeStand.Application\obj\Debug\net8.0\ref\LemonadeStand.Application.dll

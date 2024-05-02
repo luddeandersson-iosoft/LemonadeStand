@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lemonade-Stand", "Lemonade-Stand\Lemonade-Stand.csproj", "{CBDDD6BA-A0C2-4734-ADF0-E91BD05FD317}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lemonade-Stand", "Lemonade-Stand\Lemonade-Stand.csproj", "{CBDDD6BA-A0C2-4734-ADF0-E91BD05FD317}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LemonadeStand.Domain", "LemonadeStand.Domain\LemonadeStand.Domain.csproj", "{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LemonadeStand.Application", "LemonadeStand.Application\LemonadeStand.Application.csproj", "{04424C5A-24DC-4ACA-BA06-A2C1B7643837}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{CBDDD6BA-A0C2-4734-ADF0-E91BD05FD317}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBDDD6BA-A0C2-4734-ADF0-E91BD05FD317}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBDDD6BA-A0C2-4734-ADF0-E91BD05FD317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04424C5A-24DC-4ACA-BA06-A2C1B7643837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04424C5A-24DC-4ACA-BA06-A2C1B7643837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04424C5A-24DC-4ACA-BA06-A2C1B7643837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04424C5A-24DC-4ACA-BA06-A2C1B7643837}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
