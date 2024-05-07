@@ -1,7 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using LemonadeStand.Domain.Interfaces;
 
-namespace LemonadeStand.Application
+namespace LemonadeStand.Application.Interfaces
 {
     public interface IFruitPressService
     {

@@ -1,8 +1,7 @@
 using Lemonade_Stand.Components;
-using LemonadeStand.Application;
+using LemonadeStand.Application.Interfaces;
 using LemonadeStand.Application.Models;
-using Microsoft.AspNetCore.Hosting.Builder;
-using System.Reflection.Emit;
+using LemonadeStand.Application.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +11,8 @@ builder.Services.AddRazorComponents()
 
 
 builder.Services.AddScoped<IFruitPressService, FruitPressService>();
-
+builder.Services.AddScoped<OrderValidator>();
+builder.Services.AddScoped<OrderModel>();
 
 var app = builder.Build();
 
