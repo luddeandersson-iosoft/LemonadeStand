@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LemonadeStand.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5fa62312cd46de4377f10d11ed9f8146ab7e6bfa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec5480b9649c1f7791d20848f6e0a82886a63937")]
 [assembly: System.Reflection.AssemblyProductAttribute("LemonadeStand.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LemonadeStand.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
