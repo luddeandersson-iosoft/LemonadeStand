@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\LemonadeStand.Domain.csproj": {}
+    "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Domain\\LemonadeStand.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\LemonadeStand.Domain.csproj": {
+    "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Domain\\LemonadeStand.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\LemonadeStand.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Domain\\LemonadeStand.Domain.csproj",
         "projectName": "LemonadeStand.Domain",
-        "projectPath": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\LemonadeStand.Domain.csproj",
+        "projectPath": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Domain\\LemonadeStand.Domain.csproj",
         "packagesPath": "C:\\Users\\ludvig.andersson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\obj\\",
+        "outputPath": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ludvig.andersson\\AppData\\Roaming\\NuGet\\NuGet.Config",

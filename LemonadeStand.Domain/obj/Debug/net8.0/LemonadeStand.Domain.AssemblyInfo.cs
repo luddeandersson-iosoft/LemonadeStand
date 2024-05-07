@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LemonadeStand.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e22350507fc67128c44cb85545563cd2df28f6c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5fa62312cd46de4377f10d11ed9f8146ab7e6bfa")]
 [assembly: System.Reflection.AssemblyProductAttribute("LemonadeStand.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LemonadeStand.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

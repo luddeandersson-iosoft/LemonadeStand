@@ -1,62 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\",
+  "WorkspaceRootPath": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CBDDD6BA-A0C2-4734-ADF0-E91BD05FD317}|Lemonade-Stand\\Lemonade-Stand.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonade-stand\\lemonadestand\\lemonade-stand\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBDDD6BA-A0C2-4734-ADF0-E91BD05FD317}|Lemonade-Stand\\Lemonade-Stand.csproj|solutionrelative:lemonade-stand\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{04424C5A-24DC-4ACA-BA06-A2C1B7643837}|LemonadeStand.Application\\LemonadeStand.Application.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonadestand666\\lemonadestand.application\\interfaces\\ifruitpressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04424C5A-24DC-4ACA-BA06-A2C1B7643837}|LemonadeStand.Application\\LemonadeStand.Application.csproj|solutionrelative:lemonadestand.application\\interfaces\\ifruitpressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04424C5A-24DC-4ACA-BA06-A2C1B7643837}|LemonadeStand.Application\\LemonadeStand.Application.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonade-stand\\lemonadestand\\lemonadestand.application\\models\\fruitpressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04424C5A-24DC-4ACA-BA06-A2C1B7643837}|LemonadeStand.Application\\LemonadeStand.Application.csproj|solutionrelative:lemonadestand.application\\models\\fruitpressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04424C5A-24DC-4ACA-BA06-A2C1B7643837}|LemonadeStand.Application\\LemonadeStand.Application.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonadestand666\\lemonadestand.application\\services\\recipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04424C5A-24DC-4ACA-BA06-A2C1B7643837}|LemonadeStand.Application\\LemonadeStand.Application.csproj|solutionrelative:lemonadestand.application\\services\\recipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04424C5A-24DC-4ACA-BA06-A2C1B7643837}|LemonadeStand.Application\\LemonadeStand.Application.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonade-stand\\lemonadestand\\lemonadestand.application\\models\\fruitpressresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04424C5A-24DC-4ACA-BA06-A2C1B7643837}|LemonadeStand.Application\\LemonadeStand.Application.csproj|solutionrelative:lemonadestand.application\\models\\fruitpressresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04424C5A-24DC-4ACA-BA06-A2C1B7643837}|LemonadeStand.Application\\LemonadeStand.Application.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonade-stand\\lemonadestand\\lemonadestand.application\\ifruitpressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04424C5A-24DC-4ACA-BA06-A2C1B7643837}|LemonadeStand.Application\\LemonadeStand.Application.csproj|solutionrelative:lemonadestand.application\\ifruitpressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}|LemonadeStand.Domain\\LemonadeStand.Domain.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonade-stand\\lemonadestand\\lemonadestand.domain\\models\\applelemonaderecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}|LemonadeStand.Domain\\LemonadeStand.Domain.csproj|solutionrelative:lemonadestand.domain\\models\\applelemonaderecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}|LemonadeStand.Domain\\LemonadeStand.Domain.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonade-stand\\lemonadestand\\lemonadestand.domain\\models\\apple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}|LemonadeStand.Domain\\LemonadeStand.Domain.csproj|solutionrelative:lemonadestand.domain\\models\\apple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}|LemonadeStand.Domain\\LemonadeStand.Domain.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonade-stand\\lemonadestand\\lemonadestand.domain\\models\\orange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}|LemonadeStand.Domain\\LemonadeStand.Domain.csproj|solutionrelative:lemonadestand.domain\\models\\orange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}|LemonadeStand.Domain\\LemonadeStand.Domain.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonade-stand\\lemonadestand\\lemonadestand.domain\\models\\melonlemonaderecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}|LemonadeStand.Domain\\LemonadeStand.Domain.csproj|solutionrelative:lemonadestand.domain\\models\\melonlemonaderecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}|LemonadeStand.Domain\\LemonadeStand.Domain.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonade-stand\\lemonadestand\\lemonadestand.domain\\models\\melon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}|LemonadeStand.Domain\\LemonadeStand.Domain.csproj|solutionrelative:lemonadestand.domain\\models\\melon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBDDD6BA-A0C2-4734-ADF0-E91BD05FD317}|Lemonade-Stand\\Lemonade-Stand.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonade-stand\\lemonadestand\\lemonade-stand\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBDDD6BA-A0C2-4734-ADF0-E91BD05FD317}|Lemonade-Stand\\Lemonade-Stand.csproj|solutionrelative:lemonade-stand\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}|LemonadeStand.Domain\\LemonadeStand.Domain.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonade-stand\\lemonadestand\\lemonadestand.domain\\interfaces\\irecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}|LemonadeStand.Domain\\LemonadeStand.Domain.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonadestand666\\lemonadestand.domain\\interfaces\\irecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}|LemonadeStand.Domain\\LemonadeStand.Domain.csproj|solutionrelative:lemonadestand.domain\\interfaces\\irecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}|LemonadeStand.Domain\\LemonadeStand.Domain.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonade-stand\\lemonadestand\\lemonadestand.domain\\interfaces\\ifruit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{04424C5A-24DC-4ACA-BA06-A2C1B7643837}|LemonadeStand.Application\\LemonadeStand.Application.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonadestand666\\lemonadestand.application\\models\\ordervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04424C5A-24DC-4ACA-BA06-A2C1B7643837}|LemonadeStand.Application\\LemonadeStand.Application.csproj|solutionrelative:lemonadestand.application\\models\\ordervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDDD6BA-A0C2-4734-ADF0-E91BD05FD317}|Lemonade-Stand\\Lemonade-Stand.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonadestand666\\lemonade-stand\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CBDDD6BA-A0C2-4734-ADF0-E91BD05FD317}|Lemonade-Stand\\Lemonade-Stand.csproj|solutionrelative:lemonade-stand\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04424C5A-24DC-4ACA-BA06-A2C1B7643837}|LemonadeStand.Application\\LemonadeStand.Application.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonadestand666\\lemonadestand.application\\models\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04424C5A-24DC-4ACA-BA06-A2C1B7643837}|LemonadeStand.Application\\LemonadeStand.Application.csproj|solutionrelative:lemonadestand.application\\models\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04424C5A-24DC-4ACA-BA06-A2C1B7643837}|LemonadeStand.Application\\LemonadeStand.Application.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonadestand666\\lemonadestand.application\\services\\fruitpressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04424C5A-24DC-4ACA-BA06-A2C1B7643837}|LemonadeStand.Application\\LemonadeStand.Application.csproj|solutionrelative:lemonadestand.application\\services\\fruitpressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04424C5A-24DC-4ACA-BA06-A2C1B7643837}|LemonadeStand.Application\\LemonadeStand.Application.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonadestand666\\lemonadestand.application\\models\\fruitpressresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04424C5A-24DC-4ACA-BA06-A2C1B7643837}|LemonadeStand.Application\\LemonadeStand.Application.csproj|solutionrelative:lemonadestand.application\\models\\fruitpressresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}|LemonadeStand.Domain\\LemonadeStand.Domain.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonadestand666\\lemonadestand.domain\\interfaces\\ifruit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}|LemonadeStand.Domain\\LemonadeStand.Domain.csproj|solutionrelative:lemonadestand.domain\\interfaces\\ifruit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}|LemonadeStand.Domain\\LemonadeStand.Domain.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonade-stand\\lemonadestand\\lemonadestand.domain\\models\\orangelemonaderecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8DE3C5B-916B-4168-A387-E0B0C8A6F937}|LemonadeStand.Domain\\LemonadeStand.Domain.csproj|solutionrelative:lemonadestand.domain\\models\\orangelemonaderecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBDDD6BA-A0C2-4734-ADF0-E91BD05FD317}|Lemonade-Stand\\Lemonade-Stand.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonadestand666\\lemonade-stand\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDDD6BA-A0C2-4734-ADF0-E91BD05FD317}|Lemonade-Stand\\Lemonade-Stand.csproj|solutionrelative:lemonade-stand\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBDDD6BA-A0C2-4734-ADF0-E91BD05FD317}|Lemonade-Stand\\Lemonade-Stand.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonade-stand\\lemonadestand\\lemonade-stand\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBDDD6BA-A0C2-4734-ADF0-E91BD05FD317}|Lemonade-Stand\\Lemonade-Stand.csproj|solutionrelative:lemonade-stand\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBDDD6BA-A0C2-4734-ADF0-E91BD05FD317}|Lemonade-Stand\\Lemonade-Stand.csproj|c:\\users\\ludvig.andersson\\source\\repos\\lemonadestand666\\lemonade-stand\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CBDDD6BA-A0C2-4734-ADF0-E91BD05FD317}|Lemonade-Stand\\Lemonade-Stand.csproj|solutionrelative:lemonade-stand\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -65,189 +53,150 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 207,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\Lemonade-Stand\\Components\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "Lemonade-Stand\\Components\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\Lemonade-Stand\\Components\\Pages\\Home.razor",
-              "RelativeToolTip": "Lemonade-Stand\\Components\\Pages\\Home.razor",
-              "ViewState": "AQIAAHMAAAAAAAAAAAAAAH0AAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-02T05:59:36.85Z",
+              "DocumentIndex": 1,
+              "Title": "RecipeService.cs",
+              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Application\\Services\\RecipeService.cs",
+              "RelativeDocumentMoniker": "LemonadeStand.Application\\Services\\RecipeService.cs",
+              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Application\\Services\\RecipeService.cs",
+              "RelativeToolTip": "LemonadeStand.Application\\Services\\RecipeService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T13:16:10.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IFruitPressService.cs",
-              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Application\\IFruitPressService.cs",
-              "RelativeDocumentMoniker": "LemonadeStand.Application\\IFruitPressService.cs",
-              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Application\\IFruitPressService.cs",
-              "RelativeToolTip": "LemonadeStand.Application\\IFruitPressService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABNAAAA",
+              "Title": "OrderValidator.cs",
+              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Application\\Models\\OrderValidator.cs",
+              "RelativeDocumentMoniker": "LemonadeStand.Application\\Models\\OrderValidator.cs",
+              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Application\\Models\\OrderValidator.cs",
+              "RelativeToolTip": "LemonadeStand.Application\\Models\\OrderValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T08:19:22.342Z",
+              "WhenOpened": "2024-05-06T09:40:58.333Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FruitPressService.cs",
-              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Application\\Models\\FruitPressService.cs",
-              "RelativeDocumentMoniker": "LemonadeStand.Application\\Models\\FruitPressService.cs",
-              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Application\\Models\\FruitPressService.cs",
-              "RelativeToolTip": "LemonadeStand.Application\\Models\\FruitPressService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAA+AAAA",
+              "DocumentIndex": 4,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\Lemonade-Stand\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Lemonade-Stand\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\Lemonade-Stand\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Lemonade-Stand\\Components\\Pages\\Home.razor",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAQwKoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T07:02:50.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderModel.cs",
+              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Application\\Models\\OrderModel.cs",
+              "RelativeDocumentMoniker": "LemonadeStand.Application\\Models\\OrderModel.cs",
+              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Application\\Models\\OrderModel.cs",
+              "RelativeToolTip": "LemonadeStand.Application\\Models\\OrderModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T07:37:21.909Z",
+              "WhenOpened": "2024-05-03T06:42:30.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FruitPressResult.cs",
-              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Application\\Models\\FruitPressResult.cs",
-              "RelativeDocumentMoniker": "LemonadeStand.Application\\Models\\FruitPressResult.cs",
-              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Application\\Models\\FruitPressResult.cs",
-              "RelativeToolTip": "LemonadeStand.Application\\Models\\FruitPressResult.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T08:18:30.788Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "IRecipe.cs",
-              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\Interfaces\\IRecipe.cs",
+              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Domain\\Interfaces\\IRecipe.cs",
               "RelativeDocumentMoniker": "LemonadeStand.Domain\\Interfaces\\IRecipe.cs",
-              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\Interfaces\\IRecipe.cs",
+              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Domain\\Interfaces\\IRecipe.cs",
               "RelativeToolTip": "LemonadeStand.Domain\\Interfaces\\IRecipe.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAiAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T12:33:06.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\Lemonade-Stand\\Components\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "Lemonade-Stand\\Components\\Layout\\NavMenu.razor",
-              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\Lemonade-Stand\\Components\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "Lemonade-Stand\\Components\\Layout\\NavMenu.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-02T06:00:05.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Apple.cs",
-              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\Models\\Apple.cs",
-              "RelativeDocumentMoniker": "LemonadeStand.Domain\\Models\\Apple.cs",
-              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\Models\\Apple.cs",
-              "RelativeToolTip": "LemonadeStand.Domain\\Models\\Apple.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "DocumentIndex": 7,
+              "Title": "FruitPressResult.cs",
+              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Application\\Models\\FruitPressResult.cs",
+              "RelativeDocumentMoniker": "LemonadeStand.Application\\Models\\FruitPressResult.cs",
+              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Application\\Models\\FruitPressResult.cs",
+              "RelativeToolTip": "LemonadeStand.Application\\Models\\FruitPressResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T06:11:24.572Z",
+              "WhenOpened": "2024-04-30T08:18:30.788Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Melon.cs",
-              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\Models\\Melon.cs",
-              "RelativeDocumentMoniker": "LemonadeStand.Domain\\Models\\Melon.cs",
-              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\Models\\Melon.cs",
-              "RelativeToolTip": "LemonadeStand.Domain\\Models\\Melon.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Title": "IFruit.cs",
+              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Domain\\Interfaces\\IFruit.cs",
+              "RelativeDocumentMoniker": "LemonadeStand.Domain\\Interfaces\\IFruit.cs",
+              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Domain\\Interfaces\\IFruit.cs",
+              "RelativeToolTip": "LemonadeStand.Domain\\Interfaces\\IFruit.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T06:21:21.319Z",
+              "WhenOpened": "2024-04-29T11:34:20.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MelonLemonadeRecipe.cs",
-              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\Models\\MelonLemonadeRecipe.cs",
-              "RelativeDocumentMoniker": "LemonadeStand.Domain\\Models\\MelonLemonadeRecipe.cs",
-              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\Models\\MelonLemonadeRecipe.cs",
-              "RelativeToolTip": "LemonadeStand.Domain\\Models\\MelonLemonadeRecipe.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T07:35:39.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Orange.cs",
-              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\Models\\Orange.cs",
-              "RelativeDocumentMoniker": "LemonadeStand.Domain\\Models\\Orange.cs",
-              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\Models\\Orange.cs",
-              "RelativeToolTip": "LemonadeStand.Domain\\Models\\Orange.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T06:21:37.598Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\Lemonade-Stand\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\Lemonade-Stand\\Program.cs",
               "RelativeDocumentMoniker": "Lemonade-Stand\\Program.cs",
-              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\Lemonade-Stand\\Program.cs",
+              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\Lemonade-Stand\\Program.cs",
               "RelativeToolTip": "Lemonade-Stand\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-02T06:47:27.777Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppleLemonadeRecipe.cs",
-              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\Models\\AppleLemonadeRecipe.cs",
-              "RelativeDocumentMoniker": "LemonadeStand.Domain\\Models\\AppleLemonadeRecipe.cs",
-              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\Models\\AppleLemonadeRecipe.cs",
-              "RelativeToolTip": "LemonadeStand.Domain\\Models\\AppleLemonadeRecipe.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAMAAAA",
+              "DocumentIndex": 0,
+              "Title": "IFruitPressService.cs",
+              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Application\\Interfaces\\IFruitPressService.cs",
+              "RelativeDocumentMoniker": "LemonadeStand.Application\\Interfaces\\IFruitPressService.cs",
+              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Application\\Interfaces\\IFruitPressService.cs",
+              "RelativeToolTip": "LemonadeStand.Application\\Interfaces\\IFruitPressService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T07:31:57.768Z",
+              "WhenOpened": "2024-04-30T08:19:22.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "OrangeLemonadeRecipe.cs",
-              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\Models\\OrangeLemonadeRecipe.cs",
-              "RelativeDocumentMoniker": "LemonadeStand.Domain\\Models\\OrangeLemonadeRecipe.cs",
-              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\Models\\OrangeLemonadeRecipe.cs",
-              "RelativeToolTip": "LemonadeStand.Domain\\Models\\OrangeLemonadeRecipe.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAmAAAA",
+              "DocumentIndex": 6,
+              "Title": "FruitPressService.cs",
+              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Application\\Services\\FruitPressService.cs",
+              "RelativeDocumentMoniker": "LemonadeStand.Application\\Services\\FruitPressService.cs",
+              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\LemonadeStand.Application\\Services\\FruitPressService.cs",
+              "RelativeToolTip": "LemonadeStand.Application\\Services\\FruitPressService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T07:37:11.315Z",
+              "WhenOpened": "2024-04-30T07:37:21.909Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IFruit.cs",
-              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\Interfaces\\IFruit.cs",
-              "RelativeDocumentMoniker": "LemonadeStand.Domain\\Interfaces\\IFruit.cs",
-              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\Lemonade-Stand\\LemonadeStand\\LemonadeStand.Domain\\Interfaces\\IFruit.cs",
-              "RelativeToolTip": "LemonadeStand.Domain\\Interfaces\\IFruit.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T11:34:20.22Z",
+              "DocumentIndex": 10,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\Lemonade-Stand\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Lemonade-Stand\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\ludvig.andersson\\source\\repos\\LemonadeStand666\\Lemonade-Stand\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Lemonade-Stand\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-02T06:00:05.576Z",
               "EditorCaption": ""
             }
           ]
