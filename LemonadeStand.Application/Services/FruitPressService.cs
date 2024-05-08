@@ -10,16 +10,19 @@ namespace LemonadeStand.Application.Services
         public FruitPressResult Produce(IRecipe recipe, Collection<IFruit> fruits,
             int moneyPaid, int orderedGlassQuantity)
         {
-            int totalCost = orderedGlassQuantity * recipe.PricePerGlass;
-            decimal remainingFruit = fruits.Count - recipe.ConsumptionPerGlass * orderedGlassQuantity;
-
             return new FruitPressResult(true, "Successfully Produced Lemonade!", orderedGlassQuantity,
-                remainingFruit, moneyPaid - totalCost);
+                CalculateRemainingFruits(recipe, fruits, orderedGlassQuantity), CalculatePayment(recipe, orderedGlassQuantity, moneyPaid));
         }
 
-        // Validation här? Tveksam
-        // Try/catch för inputs?
-        // Bryt ut och skala ner denna klass?
 
+        private int CalculatePayment(IRecipe recipe, int orderedGlassQuantity, int moneyPaid)
+        {
+            return moneyPaid - recipe.PricePerGlass * orderedGlassQuantity;
+        }
+
+        private decimal CalculateRemainingFruits(IRecipe recipe, Collection<IFruit> fruits, int orderedGlassQuantity)
+        {
+            return fruits.Count - recipe.ConsumptionPerGlass * orderedGlassQuantity;
+        }
     }
 }
