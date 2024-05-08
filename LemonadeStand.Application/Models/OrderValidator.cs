@@ -27,6 +27,9 @@ namespace LemonadeStand.Application.Models
                 .Must(order => order.SelectedRecipe != null &&
                     order.MoneyPaid >= order.SelectedRecipe.PricePerGlass * order.OrderedQuantity)
                 .WithMessage("Customer payment not enough");
+
+            RuleFor(order => order.MoneyPaid).GreaterThanOrEqualTo(0)
+                .WithMessage("Payment can't be negative");
         }
     }
 }
