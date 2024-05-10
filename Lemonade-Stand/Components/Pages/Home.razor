@@ -7,7 +7,6 @@
 @using LemonadeStand.Domain.Interfaces
 @using LemonadeStand.Domain.Models
 @inject OrderValidator orderValidator
-@inject OrderModel NewOrder
 @inject IFruitPressService fruitPressService
 @rendermode InteractiveServer
 
@@ -20,52 +19,28 @@
 <h2>Available Recipes</h2>
 
     <div class="card-group" style="width: 610px;">
-
-        <div class="card">
-            <div class="card-header">
-                <h5>Apple Lemonade</h5>
+        @foreach (var recipe in availableRecipeList)
+        {
+            <div class="card">
+                <div class="card-header">
+                    <h5>@recipe.Name</h5>
+                </div>
+                <div class="card-body">
+                    Price per glass: @recipe.PricePerGlass
+                    <hr />
+                    Fruits needed per glass: @recipe.ConsumptionPerGlass
+                </div>
             </div>
-            <div class="card-body">
-                Price per glass: 10
-                <hr />
-                Fruits needed per glass: 2,5 Apple(s)
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header">
-                <h5>Melon Lemonade</h5>
-            </div>
-            <div class="card-body">
-                Price per glass: 12
-                <hr />
-                Fruits needed per glass: 0,5 Melon(s)
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header">
-                <h5> Orange Lemonade </h5>
-            </div>
-            <div class="card-body">
-                Price per glass: 9
-                <hr />
-                Fruits needed per glass: 1 Orange(s)
-            </div>
-        </div>
-
+        }
     </div>
 
 <hr />
 
 <h2>Customer order</h2>
 
-
-
-
 @if (!string.IsNullOrEmpty(orderMessage))
 {
-    if (orderMessage.StartsWith("Successfully"))
+    if (orderMessage.StartsWith("Successful"))
     {
         <div class="alert alert-success" style="">
             @orderMessage
@@ -141,47 +116,41 @@
     public string orderMessage;
     public string orderDetails;
 
+    public OrderModel NewOrder = new();
+    public MessageService messageService = new();
     public List<string> ErrorMessages { get; set; } = new List<String>();
 
     public List<IRecipe> availableRecipeList = RecipeService.GetRecipes();
     private ValidationResult validationResult;
-    
+
 
     private void ProcessOrder()
     {
-
         selectedRecipe = availableRecipeList.FirstOrDefault(r => r.Name == selectedRecipeName);
         NewOrder.SelectedRecipe = selectedRecipe;
-
-
         NewOrder.Fruits.Clear();
-        for (int i = 0; i < apples; i++) NewOrder.Fruits.Add(new Apple());
-        for (int i = 0; i < melons; i++) NewOrder.Fruits.Add(new Melon());
-        for (int i = 0; i < oranges; i++) NewOrder.Fruits.Add(new Orange());
-
-
-        NewOrder.OrderedQuantity = NewOrder.OrderedQuantity;
-        NewOrder.MoneyPaid = NewOrder.MoneyPaid;
-
+        NewOrder.Fruits = FruitFactory.CreateFruitList(apples, melons, oranges);
 
         validationResult = orderValidator.Validate(NewOrder);
 
         if (validationResult.IsValid)
         {
-
             FruitPressResult result = fruitPressService.Produce(NewOrder.SelectedRecipe, NewOrder.Fruits, NewOrder.MoneyPaid, NewOrder.OrderedQuantity);
-            orderMessage = "Successfully processed order!";
-            orderDetails = $"Glasses Produced: {result.GlassesProduced}, Remaining Fruits: {result.RemainingFruits}, Change Returned: {result.ChangeReturned}";
+            if (result.Success)
+            {
+                orderMessage = "Successful Order!";
+                orderDetails = messageService.CreateOrderSuccessMessage(result);
+            }
+            else
+            {
+                orderMessage = result.Message;
+            }
             ErrorMessages.Clear();
         }
         else
         {
-            ErrorMessages = validationResult.Errors.Select(e => e.ErrorMessage).ToList();
-            orderMessage = "Validation failed";
+            orderMessage = messageService.CreateOrderFailureMessage(validationResult.Errors.Select(e => e.ErrorMessage).ToList());
         }
-
         StateHasChanged();
     }
-
 }
-

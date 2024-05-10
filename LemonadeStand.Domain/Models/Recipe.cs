@@ -4,8 +4,8 @@ namespace LemonadeStand.Domain.Models
 {
     public class Recipe : IRecipe
     {
-        public string Name { get; set; }
-        public Type AllowedFruit { get; set; }
+        public string Name { get; }
+        public Type AllowedFruit { get; }
         public decimal ConsumptionPerGlass { get; set; }
         public int PricePerGlass { get; set; }
 

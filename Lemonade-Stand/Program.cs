@@ -12,7 +12,7 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddScoped<IFruitPressService, FruitPressService>();
 builder.Services.AddScoped<OrderValidator>();
-builder.Services.AddScoped<OrderModel>();
+builder.Services.AddScoped<MessageService>();
 
 var app = builder.Build();
 

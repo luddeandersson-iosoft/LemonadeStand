@@ -1,5 +1,7 @@
 .vs/
 
+.packages/
+
 Lemonade-Stand/appsettings.json
 
 Lemonade-Stand/appsettings.Development.json
@@ -7,6 +9,8 @@ Lemonade-Stand/appsettings.Development.json
 Lemonade-Stand/obj/
 
 LemonadeStand.Domain/obj/
+
+LemonadeStand.Domain/bin/
 
 LemonadeStand.Application/obj/
 

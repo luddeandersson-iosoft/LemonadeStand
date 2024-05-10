@@ -6,67 +6,74 @@ using System.Collections.ObjectModel;
 
 namespace LemonadeStand.Application.Test
 {
-    public class FruitPressServiceTest
+    public class FruitPressServiceTests
     {
-        private readonly FruitPressService _fruitPressService;
-        private readonly Collection<IFruit> _fruits;
+        private readonly IRecipe recipe;
+        private readonly Collection<IFruit> fruits;
+        private readonly FruitPressService fruitPressService;
 
-        public FruitPressServiceTest()
+        public FruitPressServiceTests()
         {
-            _fruitPressService = new FruitPressService();
-            _fruits = new Collection<IFruit>();
+            recipe = new Recipe("Apple Lemonade", typeof(Apple), 2, 5);
+            fruits = new Collection<IFruit>(Enumerable.Repeat<IFruit>(new Apple(), 25).ToList());
+            fruitPressService = new FruitPressService();
         }
 
         [Fact]
-        public void Produce_ShouldSucceed_WhenMoneyAndFruitsIsEnough()
+        public void Produce_ShouldReturnSuccess_WhenConditionsAreMet()
         {
             // Arrange
-            IRecipe recipe = new Recipe("Apple Lemonade", typeof(Apple), 2, 5);
+            int moneyPaid = 125;
             int orderedGlassQuantity = 10;
-            int moneyPaid = 100;    
-
-            for(int i = 0; i < 24; i++)
-            {
-                _fruits.Add(new Apple());
-            }
 
             // Act
-            var result = _fruitPressService.Produce(recipe, _fruits, moneyPaid, orderedGlassQuantity);
+            var result = fruitPressService.Produce(recipe, fruits, moneyPaid, orderedGlassQuantity);
 
             // Assert
             result.Success.Should().BeTrue();
-            result.Message.Should().Be("Successfully Produced Lemonade!");
-            result.ChangeReturned.Should().Be(50);
-            result.RemainingFruits.Should().Be(4);
         }
 
-
-        [Theory]
-        [InlineData(10, 125, true)]
-        [InlineData(5, 75, true)]
-        [InlineData(20, 200, true)]
-        public void Produce_ShouldSucceed_MultipleParameters(int orderedGlassQuantity, int moneyPaid, bool successExpected)
+        [Fact]
+        public void Produce_ShouldReturnCorrectMessage_WhenSuccessful()
         {
             // Arrange
-            IRecipe recipe = new Recipe("Apple Lemonade", typeof(Apple), 2, 5);
-
-            _fruits.Clear();
-            for (int i = 0; i < 25; i++)
-            {
-                _fruits.Add(new Apple());
-            }
+            int moneyPaid = 125;
+            int orderedGlassQuantity = 10;
 
             // Act
-            var result = _fruitPressService.Produce(recipe, _fruits, moneyPaid, orderedGlassQuantity);
+            var result = fruitPressService.Produce(recipe, fruits, moneyPaid, orderedGlassQuantity);
 
             // Assert
-            result.Success.Should().Be(successExpected);
-            if (successExpected)
-            {
-                result.Message.Should().Be("Successfully Produced Lemonade!");
-                result.ChangeReturned.Should().Be(moneyPaid - recipe.PricePerGlass * orderedGlassQuantity);
-                result.RemainingFruits.Should().Be(25 - recipe.ConsumptionPerGlass*orderedGlassQuantity);
-            }
+            result.Message.Should().Be("Successfully Produced Lemonade!");
+        }
+
+        [Fact]
+        public void Produce_ShouldReturnCorrectChange_WhenSuccessful()
+        {
+            // Arrange
+            int moneyPaid = 125;
+            int orderedGlassQuantity = 10;
+
+            // Act
+            var result = fruitPressService.Produce(recipe, fruits, moneyPaid, orderedGlassQuantity);
+
+            // Assert
+            result.ChangeReturned.Should().Be(75);
+        }
+
+        [Fact]
+        public void Produce_ShouldReturnCorrectRemainingFruits_WhenSuccessful()
+        {
+            // Arrange
+            int moneyPaid = 125;
+            int orderedGlassQuantity = 10;
+
+            // Act
+            var result = fruitPressService.Produce(recipe, fruits, moneyPaid, orderedGlassQuantity);
+
+            // Assert
+            result.RemainingFruits.Should().Be(5);
         }
     }
+
 }

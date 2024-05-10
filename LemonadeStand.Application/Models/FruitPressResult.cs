@@ -5,11 +5,11 @@ namespace LemonadeStand.Application
 {
     public class FruitPressResult
     {
-        public bool Success { get; set; }
-        public string Message { get; set; }
-        public int GlassesProduced { get; set; }
-        public decimal RemainingFruits { get; set; }
-        public decimal ChangeReturned { get; set; }
+        public bool Success { get; }
+        public string Message { get; }
+        public int GlassesProduced { get; }
+        public decimal RemainingFruits { get; }
+        public decimal ChangeReturned { get; }
 
         public FruitPressResult(bool success, string message, int glassesProduced, 
             decimal remainingFruits, decimal changeReturned = 0) 

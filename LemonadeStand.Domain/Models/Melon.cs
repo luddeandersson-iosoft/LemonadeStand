@@ -4,11 +4,6 @@ namespace LemonadeStand.Domain.Models
 {
     public class Melon : IFruit
     {
-        public string Name { get; private set; }
-        public Melon()
-        {
-            Name = "Melon";
-        }
-
+        public string Name { get; } = "Melon";
     }
 }
