@@ -1,0 +1,156 @@
+﻿@page "/"
+@using FluentValidation.Results
+@using LemonadeStand.Application
+@using LemonadeStand.Application.Interfaces
+@using LemonadeStand.Application.Models
+@using LemonadeStand.Application.Services
+@using LemonadeStand.Domain.Interfaces
+@using LemonadeStand.Domain.Models
+@inject OrderValidator orderValidator
+@inject IFruitPressService fruitPressService
+@rendermode InteractiveServer
+
+<PageTitle>Home</PageTitle>
+
+<h1>Lemonade Stand</h1>
+    
+<hr />
+
+<h2>Available Recipes</h2>
+
+    <div class="card-group" style="width: 610px;">
+        @foreach (var recipe in availableRecipeList)
+        {
+            <div class="card">
+                <div class="card-header">
+                    <h5>@recipe.Name</h5>
+                </div>
+                <div class="card-body">
+                    Price per glass: @recipe.PricePerGlass
+                    <hr />
+                    Fruits needed per glass: @recipe.ConsumptionPerGlass
+                </div>
+            </div>
+        }
+    </div>
+
+<hr />
+
+<h2>Customer order</h2>
+
+@if (!string.IsNullOrEmpty(orderMessage))
+{
+    if (orderMessage.StartsWith("Successful"))
+    {
+        <div class="alert alert-success" style="">
+            @orderMessage
+        </div>
+        <div class="alert alert-primary">
+            <h5>Order Details:</h5>
+            <p>@orderDetails</p>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-danger">
+            <p>@orderMessage</p>
+            @foreach(var errorMessage in ErrorMessages)
+            {
+                <li>@errorMessage</li>
+            }
+        </div>
+    }
+}
+
+<EditForm Model="NewOrder" OnSubmit="ProcessOrder" FormName="LemonadeOrderForm">
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
+
+    <div>
+        <label> Select Recipe:</label>
+        <InputSelect @bind-Value="selectedRecipeName" class="form-control">
+            <option value="">Choose a recipe...</option>
+            @foreach (var recipe in availableRecipeList)
+            {
+                <option value="@recipe.Name">@recipe.Name</option>
+            }
+        </InputSelect>
+    </div>
+
+    <div>
+        <label> Ordered Quantity: </label>
+        <InputNumber @bind-Value="NewOrder.OrderedQuantity" class="form-control" />
+    </div>
+
+    <div>
+        <label> Money Paid </label>
+        <InputNumber @bind-Value="NewOrder.MoneyPaid" class="form-control" />
+    </div>
+
+    <div>
+        <label> Apples added: </label>
+        <InputNumber @bind-Value="apples" class="form-control" />
+    </div>
+
+    <div>
+        <label> Melons added: </label>
+        <InputNumber @bind-Value="melons" class="form-control" />
+    </div>
+
+    <div>
+        <label> Oranges added: </label>
+        <InputNumber @bind-Value="oranges" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary"> Process order </button>
+</EditForm>
+
+
+
+@code {
+    public string selectedRecipeName;
+    public IRecipe selectedRecipe;
+    public int apples;
+    public int melons;
+    public int oranges;
+    public string orderMessage;
+    public string orderDetails;
+
+    public OrderModel NewOrder = new();
+    public MessageService messageService = new();
+    public List<string> ErrorMessages { get; set; } = new List<String>();
+
+    public List<IRecipe> availableRecipeList = RecipeService.GetRecipes();
+    private ValidationResult validationResult;
+
+
+    private void ProcessOrder()
+    {
+        selectedRecipe = availableRecipeList.FirstOrDefault(r => r.Name == selectedRecipeName);
+        NewOrder.SelectedRecipe = selectedRecipe;
+        NewOrder.Fruits.Clear();
+        NewOrder.Fruits = FruitFactory.CreateFruitList(apples, melons, oranges);
+
+        validationResult = orderValidator.Validate(NewOrder);
+
+        if (validationResult.IsValid)
+        {
+            FruitPressResult result = fruitPressService.Produce(NewOrder.SelectedRecipe, NewOrder.Fruits, NewOrder.MoneyPaid, NewOrder.OrderedQuantity);
+            if (result.Success)
+            {
+                orderMessage = "Successful Order!";
+                orderDetails = messageService.CreateOrderSuccessMessage(result);
+            }
+            else
+            {
+                orderMessage = result.Message;
+            }
+            ErrorMessages.Clear();
+        }
+        else
+        {
+            orderMessage = messageService.CreateOrderFailureMessage(validationResult.Errors.Select(e => e.ErrorMessage).ToList());
+        }
+        StateHasChanged();
+    }
+}
